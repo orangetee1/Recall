@@ -1,15 +1,71 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+
+# Локальная конфигурация (пути к SDK и т.п.)
 local.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/*
+!.idea/codeStyles/
+!.idea/runConfigurations/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropdown.xml
+.idea/deploymentTargetSelector.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/other.xml
+
+# Нативная сборка
+.externalNativeBuild/
+.cxx/
+
+# Артефакты сборки
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+
+# Сгенерированные файлы
+bin/
+gen/
+out/
+captures/
+
+# Логи
+*.log
+
+# Kotlin
+.kotlin/
+
+# Ключи и подписи (не коммитить!)
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Профилирование и отчёты
+*.hprof
+*.trace
+
+# Прочее
+.DS_Store
+Thumbs.db
+*.swp
+*~
